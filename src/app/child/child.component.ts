@@ -13,4 +13,12 @@ export class ChildComponent implements OnInit {
   ngOnInit() {
   }
 
+  get testGetter(): string {
+    return this.someValue;
+  }
+
+  someAction() {
+    this.someValue = 'changed value';
+  }
+
 }

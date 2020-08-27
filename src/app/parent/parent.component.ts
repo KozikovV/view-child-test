@@ -12,7 +12,9 @@ export class ParentComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.childComponent);
   }
 
+  updateChild(): void {
+    this.childComponent.someAction();
+  }
 }
